@@ -61,9 +61,9 @@
       <div class="outer">
         <section id="main">
   
-    <article id="&#39;web-工具" class="article article-type-&#39;web" itemscope itemprop="blogPost">
+    <article id="&#39;web-WEB压测工具" class="article article-type-&#39;web" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/10/29/工具/" class="article-date">
+    <a href="/2015/10/29/WEB压测工具/" class="article-date">
   <time datetime="2015-10-29T06:28:40.000Z" itemprop="datePublished">2015-10-29</time>
 </a>
     
@@ -75,7 +75,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/10/29/工具/">工具&#39;</a>
+      <a class="article-title" href="/2015/10/29/WEB压测工具/">压测工具</a>
     </h1>
   
 
@@ -83,22 +83,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>һ��http_load<br>�����ǳ�С����ѹ��Ҳ����100K<br>http_load�Բ��и��õķ�ʽ���У����Բ���web���������������븺�ء���������ͬ�ڴ�����ѹ�����Թ�<br>�ߣ���������һ����һ�Ľ������У�һ�㲻���ѿͻ��������������Բ���HTTPS������վ������<br>���ص�ַ�� <a href="http://soft.vpser.net/test/http_load/http_load-12mar2006.tar.gz" target="_blank" rel="external">http://soft.vpser.net/test/http_load/http_load-12mar2006.tar.gz</a><br>��װ�ܼ���</p>
+        <p>一、http_load<br>程序非常小，解压后也不到100K<br>http_load以并行复用的方式运行，用以测试web服务器的吞吐量与负载。但是它不同于大多数压力测试工<br>具，它可以以一个单一的进程运行，一般不会把客户机搞死。还可以测试HTTPS类的网站请求。<br>下载地址： <a href="http://soft.vpser.net/test/http_load/http_load-12mar2006.tar.gz" target="_blank" rel="external">http://soft.vpser.net/test/http_load/http_load-12mar2006.tar.gz</a><br>安装很简单</p>
 <p>#tar zxvf http_load-12mar2006.tar.gz</p>
 <p>#cd http_load-12mar2006</p>
-<p>#make &amp;&amp; make install<br>������ʽ��http_load -p �������ʽ����� -s ����ʱ�� ��Ҫ���ʵ�URL��<br>������ʵ�����������ϣ�����֮����ѡ����û��ʲô���ơ�������д��http_load -parallel 5 -seconds<br>300 urls.txtҲ�ǿ��Եġ����ǰѲ��������Ҽ���˵��һ�¡�<br>-parallel ��д-p �������ǲ������û���������<br>-fetches ��д-f ���������ܼƵķ��ʴ���<br>-rate ��д-p ��������ÿ���ķ���Ƶ��<br>-seconds��д-s ���������ܼƵķ���ʱ��<br>׼��URL����urllist.txt������ʽ��ÿ��һ��URL��URL���ó���50��100������Ч���ȽϺ�.����ʽ<br>���£�<br>������һ������ÿ�ж���һ��url�������������������ʵġ�<br>example.url����:<br><a href="http://www.licess.cn" target="_blank" rel="external">http://www.licess.cn</a><br><a href="http://www.vpser.net" target="_blank" rel="external">http://www.vpser.net</a><br><a href="http://soft.vpser.net" target="_blank" rel="external">http://soft.vpser.net</a><br>����˵��<br>Lifting the server siege&amp; done.<br>Transactions: 3419263 hits //����419263�δ���<br>Availability: 100.00 % //100.00 % �ɹ���<br>Elapsed time: 5999.69 secs //�ܹ���ʱ<br>Data transferred: 84273.91 MB //�����ݴ���84273.91 MB<br>Response time: 0.37 secs //��Ӧ��ʱ1.65�룺��ʾ�������ӵ��ٶ�<br>Transaction rate: 569.91 trans/sec //��ÿ������ 569.91 �δ�������ʾ��������<br>Throughput: 14.05 MB/sec //ƽ��ÿ�봫������<br>Concurrency: 213.42 //ʵ�����߲�����<br>Successful transactions: 2564081 //�ɹ���������<br>Failed transactions: 11 //ʧ�ܴ�������<br>Longest transaction: 29.04 //ÿ�δ��������ʱ��<br>Shortest transaction: 0.00 //ÿ�δ�����������ʱ��<br><a href="http://www.vpser.net/uncategorized/choose-vps.html" target="_blank" rel="external">http://www.vpser.net/uncategorized/choose-vps.html</a><br><a href="http://www.vpser.net/vps-cp/hypervm-tutorial.html" target="_blank" rel="external">http://www.vpser.net/vps-cp/hypervm-tutorial.html</a><br><a href="http://www.vpser.net/coupons/diavps-april-coupons.html" target="_blank" rel="external">http://www.vpser.net/coupons/diavps-april-coupons.html</a><br><a href="http://www.vpser.net/security/vps-backup-web-mysql.html" target="_blank" rel="external">http://www.vpser.net/security/vps-backup-web-mysql.html</a><br>���磺<br>http_load -p 30 -s 60 urllist.txt<br>����ֱ�ӿ���ʹ����<br>�÷���<br>webbench -c ������ -t ���в���ʱ�� URL<br>�磺<br>webbench -c 5000 -t 120 <a href="http://www.vpser.net/" target="_blank" rel="external">http://www.vpser.net/</a><br>����ab<br>ab��apache�Դ���һ���ǿ���Ĳ��Թ���<br>��װ��apacheһ�����Դ��ˣ�<br>�÷����Բ鿴����˵��<br>$ ./ab<br>./ab: wrong number of arguments<br>��.<br>�ġ�Siege<br>һ�Դ��ѹ�����Թ��ߣ����Ը������ö�һ��WEBվ�����ж��û��Ĳ������ʣ���¼ÿ���û������������̵���Ӧʱ�䣬����һ�������Ĳ����������ظ����С�<br>�ٷ��� <a href="http://www.joedog.org/" target="_blank" rel="external">http://www.joedog.org/</a><br>Siege���أ� <a href="http://soft.vpser.net/test/siege/siege-2.67.tar.gz" target="_blank" rel="external">http://soft.vpser.net/test/siege/siege-2.67.tar.gz</a><br>��ѹ��</p>
-<h1 id="tar_-zxf_siege-2-67-tar-gz">tar -zxf siege-2.67.tar.gz</h1><p>������ѹĿ¼��</p>
-<h1 id="cd_siege-2-67/">cd siege-2.67/</h1><p>��װ��</p>
-<p>#./configure ; make</p>
-<p>#make install<br>ʹ��<br>siege -c 200 -r 10 -f example.url<br>-c�ǲ�������-r���ظ������� urlUsage: ./ab [options] [ <a href="http://]hostname[:port]/path" target="_blank" rel="external">http://]hostname[:port]/path</a><br>Options are:<br>-n requests Number of requests to perform<br>-c concurrency Number of multiple requests to make<br>-t timelimit Seconds to max. wait for responses<br>-p postfile File containing data to POST<br>-T content-type Content-type header for POSTing<br>-v verbosity How much troubleshooting info to print<br>-w Print out results in HTML tables<br>-i Use HEAD instead of GET<br>-x attributes String to insert as table attributes<br>-y attributes String to insert as tr attributes<br>-z attributes String to insert as td or th attributes<br>-C attribute Add cookie, eg. ‘Apache=1234. (repeatable)<br>-H attribute Add Arbitrary header line, eg. ‘Accept-Encoding: gzip’<br>Inserted after all normal header lines. (repeatable)<br>-A attribute Add Basic WWW Authentication, the attributes<br>are a colon separated username and password.<br>-P attribute Add Basic Proxy Authentication, the attributes<br>are a colon separated username and password.<br>-X proxy:port Proxyserver and port number to use<br>-V Print version number and exit<br>-k Use HTTP KeepAlive feature<br>-d Do not show percentiles served table.<br>-S Do not show confidence estimators and warnings.<br>-g filename Output collected data to gnuplot format file.<br>-e filename Output CSV file with percentages served<br>-h Display usage information (this message)<br>�����ڶ࣬һ�������õ�����-n ��-c<br>���磺<br>./ab -c 1000 -n 100 <a href="http://www.vpser.net/index.php" target="_blank" rel="external">http://www.vpser.net/index.php</a><br>������ʾͬʱ����1000������������100��index.php�����˽��ˣ�������������һ���������������ķ��ؽ���<br>���% ./http_load -rate 5 -seconds 10 urls˵��ִ����һ������ʱ��10���Ĳ��ԣ�ÿ����Ƶ��Ϊ5��<br>49 fetches, 2 max parallel, 289884 bytes, in 10.0148 seconds5916 mean bytes/connection4.89274<br>fetches/sec, 28945.5 bytes/secmsecs/connect: 28.8932 mean, 44.243 max, 24.488 minmsecs/first<br>-response: 63.5362 mean, 81.624 max, 57.803 minHTTP response codes: code 200 – 49<br>������7��<br>1��49 fetches, 2 max parallel, 289884 bytes, in 10.0148 seconds<br>˵���������Ĳ�����������49�������������Ĳ�����������2���ܼƴ�����������289884bytes�����е�ʱ����10.0148��<br>2��5916 mean bytes/connection˵��ÿһ����ƽ��������������289884/49=5916<br>3��4.89274 fetches/sec, 28945.5 bytes/sec<br>˵��ÿ������Ӧ����Ϊ4.89274��ÿ�봫�ݵ�����Ϊ28945.5 bytes/sec<br>4��msecs/connect: 28.8932 mean, 44.243 max, 24.488 min˵��ÿ���ӵ�ƽ����Ӧʱ����28.8932 msecs<br>����������Ӧʱ��44.243 msecs����С����Ӧʱ��24.488 msecs<br>5��msecs/first-response: 63.5362 mean, 81.624 max, 57.803 min<br>6��HTTP response codes: code 200 – 49 ˵��������Ӧҳ�������ͣ�����403�����͹��࣬�ǿ���<br>Ҫע���Ƿ�ϵͳ������ƿ����<br>����˵����<br>���Խ�������Ҫ��ָ���� fetches/sec��msecs/connect ����ѡ���������ÿ���ܹ���Ӧ�Ĳ�ѯ������<br>������ָ�����������ܡ��ƺ��� apache��ab׼ȷ��Ҫ��һЩ��Ҳ����˵����һЩ��<br>Qpt-ÿ����Ӧ�û�����response time��ÿ������Ӧ�û�ʱ�䡣<br>���ԵĽ�����ҪҲ�ǿ�������ֵ����Ȼ����������ָ�겢�������ɶ����ܵķ�7�����ǻ���Ҫ�Է�������<br>cpu��men���з�7�����ܵó�����<br>����webbench<br>webbench��Linux�µ�һ����վѹ�����Թ��ߣ���������ģ��3������������ȥ������վ�ĸ�������������<br>��ַ���Ե�google�ѣ�����������һ��<br>���ص�ַ�� <a href="http://soft.vpser.net/test/webbench/webbench-1.5.tar.gz" target="_blank" rel="external">http://soft.vpser.net/test/webbench/webbench-1.5.tar.gz</a><br>����������С����ѹ�󲻵�50K���Ǻ�<br>��װ�ǳ�����</p>
+<p>#make &amp;&amp; make install<br>命令格式：http_load -p 并发访问进程数 -s 访问时间 需要访问的URL文件<br>参数其实可以自由组合，参数之间的选择并没有什么限制。比如你写成http_load -parallel 5 -seconds<br>300 urls.txt也是可以的。我们把参数给大家简单说明一下。<br>-parallel 简写-p ：含义是并发的用户进程数。<br>-fetches 简写-f ：含义是总计的访问次数<br>-rate 简写-p ：含义是每秒的访问频率<br>-seconds简写-s ：含义是总计的访问时间<br>准备URL文件：urllist.txt，文件格式是每行一个URL，URL最好超过50－100个测试效果比较好.文件格式<br>如下：<br><a href="http://www.vpser.net/uncategorized/choose-vps.html" target="_blank" rel="external">http://www.vpser.net/uncategorized/choose-vps.html</a><br><a href="http://www.vpser.net/vps-cp/hypervm-tutorial.html" target="_blank" rel="external">http://www.vpser.net/vps-cp/hypervm-tutorial.html</a><br><a href="http://www.vpser.net/coupons/diavps-april-coupons.html" target="_blank" rel="external">http://www.vpser.net/coupons/diavps-april-coupons.html</a><br><a href="http://www.vpser.net/security/vps-backup-web-mysql.html" target="_blank" rel="external">http://www.vpser.net/security/vps-backup-web-mysql.html</a><br>例如：<br>http_load -p 30 -s 60 urllist.txt<br>参数了解了，我们来看运行一条命令来看看它的返回结果<br>命令：% ./http_load -rate 5 -seconds 10 urls说明执行了一个持续时间10秒的测试，每秒的频率为5。<br>49 fetches, 2 max parallel, 289884 bytes, in 10.0148 seconds5916 mean bytes/connection4.89274<br>fetches/sec, 28945.5 bytes/secmsecs/connect: 28.8932 mean, 44.243 max, 24.488 minmsecs/first<br>-response: 63.5362 mean, 81.624 max, 57.803 minHTTP response codes: code 200 – 49<br>结果分析：<br>1．49 fetches, 2 max parallel, 289884 bytes, in 10.0148 seconds<br>说明在上面的测试中运行了49个请求，最大的并发进程数是2，总计传输的数据是289884bytes，运行的时间是10.0148秒<br>2．5916 mean bytes/connection说明每一连接平均传输的数据量289884/49=5916<br>3．4.89274 fetches/sec, 28945.5 bytes/sec<br>说明每秒的响应请求为4.89274，每秒传递的数据为28945.5 bytes/sec<br>4．msecs/connect: 28.8932 mean, 44.243 max, 24.488 min说明每连接的平均响应时间是28.8932 msecs<br>，最大的响应时间44.243 msecs，最小的响应时间24.488 msecs<br>5．msecs/first-response: 63.5362 mean, 81.624 max, 57.803 min<br>6、HTTP response codes: code 200 – 49 说明打开响应页面的类型，如果403的类型过多，那可能<br>要注意是否系统遇到了瓶颈。<br>特殊说明：<br>测试结果中主要的指标是 fetches/sec、msecs/connect 这个选项，即服务器每秒能够响应的查询次数，<br>用这个指标来衡量性能。似乎比 apache的ab准确率要高一些，也更有说服力一些。<br>Qpt-每秒响应用户数和response time，每连接响应用户时间。<br>测试的结果主要也是看这两个值。当然仅有这两个指标并不能完成对性能的分析，我们还需要对服务器的<br>cpu、men进行分析，才能得出结论<br>二、webbench<br>webbench是Linux下的一个网站压力测试工具，最多可以模拟3万个并发连接去测试网站的负载能力。下载<br>地址可以到google搜，我这里给出一个<br>下载地址： <a href="http://soft.vpser.net/test/webbench/webbench-1.5.tar.gz" target="_blank" rel="external">http://soft.vpser.net/test/webbench/webbench-1.5.tar.gz</a><br>这个程序更小，解压后不到50K，呵呵<br>安装非常简单</p>
 <p>#tar zxvf webbench-1.5.tar.gz</p>
 <p>#cd webbench-1.5</p>
-<p>#make &amp;&amp; make install<br>���ڵ�ǰĿ¼����webbench��ִ��</p>
+<p>#make &amp;&amp; make install<br>会在当前目录生成webbench可执行文件，直接可以使用了<br>用法：<br>webbench -c 并发数 -t 运行测试时间 URL<br>如：<br>webbench -c 5000 -t 120 <a href="http://www.vpser.net/" target="_blank" rel="external">http://www.vpser.net/</a><br>三、ab<br>ab是apache自带的一款功能强大的测试工具<br>安装了apache一般就自带了，<br>用法可以查看它的说明<br>$ ./ab<br>./ab: wrong number of arguments<br>Usage: ./ab [options] [ <a href="http://]hostname[:port]/path" target="_blank" rel="external">http://]hostname[:port]/path</a><br>Options are:<br>-n requests Number of requests to perform<br>-c concurrency Number of multiple requests to make<br>-t timelimit Seconds to max. wait for responses<br>-p postfile File containing data to POST<br>-T content-type Content-type header for POSTing<br>-v verbosity How much troubleshooting info to print<br>-w Print out results in HTML tables<br>-i Use HEAD instead of GET<br>-x attributes String to insert as table attributes<br>-y attributes String to insert as tr attributes<br>-z attributes String to insert as td or th attributes<br>-C attribute Add cookie, eg. ‘Apache=1234. (repeatable)<br>-H attribute Add Arbitrary header line, eg. ‘Accept-Encoding: gzip’<br>Inserted after all normal header lines. (repeatable)<br>-A attribute Add Basic WWW Authentication, the attributes<br>are a colon separated username and password.<br>-P attribute Add Basic Proxy Authentication, the attributes<br>are a colon separated username and password.<br>-X proxy:port Proxyserver and port number to use<br>-V Print version number and exit<br>-k Use HTTP KeepAlive feature<br>-d Do not show percentiles served table.<br>-S Do not show confidence estimators and warnings.<br>-g filename Output collected data to gnuplot format file.<br>-e filename Output CSV file with percentages served<br>-h Display usage information (this message)<br>参数众多，一般我们用到的是-n 和-c<br>例如：<br>./ab -c 1000 -n 100 <a href="http://www.vpser.net/index.php" target="_blank" rel="external">http://www.vpser.net/index.php</a><br>这个表示同时处理1000个请求并运行100次index.php文件.<br>四、Siege<br>一款开源的压力测试工具，可以根据配置对一个WEB站点进行多用户的并发访问，记录每个用户所有请求过程的相应时间，并在一定数量的并发访问下重复进行。<br>官方： <a href="http://www.joedog.org/" target="_blank" rel="external">http://www.joedog.org/</a><br>Siege下载： <a href="http://soft.vpser.net/test/siege/siege-2.67.tar.gz" target="_blank" rel="external">http://soft.vpser.net/test/siege/siege-2.67.tar.gz</a><br>解压：</p>
+<h1 id="tar_-zxf_siege-2-67-tar-gz">tar -zxf siege-2.67.tar.gz</h1><p>进入解压目录：</p>
+<h1 id="cd_siege-2-67/">cd siege-2.67/</h1><p>安装：</p>
+<p>#./configure ; make</p>
+<p>#make install<br>使用<br>siege -c 200 -r 10 -f example.url<br>-c是并发量，-r是重复次数。 url文件就是一个文本，每行都是一个url，它会从里面随机访问的。<br>example.url内容:<br><a href="http://www.licess.cn" target="_blank" rel="external">http://www.licess.cn</a><br><a href="http://www.vpser.net" target="_blank" rel="external">http://www.vpser.net</a><br><a href="http://soft.vpser.net" target="_blank" rel="external">http://soft.vpser.net</a><br>结果说明<br>Lifting the server siege… done.<br>Transactions: 3419263 hits //完成419263次处理<br>Availability: 100.00 % //100.00 % 成功率<br>Elapsed time: 5999.69 secs //总共用时<br>Data transferred: 84273.91 MB //共数据传输84273.91 MB<br>Response time: 0.37 secs //相应用时1.65秒：显示网络连接的速度<br>Transaction rate: 569.91 trans/sec //均每秒完成 569.91 次处理：表示服务器后<br>Throughput: 14.05 MB/sec //平均每秒传送数据<br>Concurrency: 213.42 //实际最高并发数<br>Successful transactions: 2564081 //成功处理次数<br>Failed transactions: 11 //失败处理次数<br>Longest transaction: 29.04 //每次传输所花最长时间<br>Shortest transaction: 0.00 //每次传输所花最短时间</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://shengbaodong.github.io/2015/10/29/工具/" data-id="cigbuqnkg0002bsqdn654lyp9" class="article-share-link">Share</a>
+      <a data-url="http://shengbaodong.github.io/2015/10/29/WEB压测工具/" data-id="cigbvadhz0004qwqdiyhartyp" class="article-share-link">Share</a>
       
       
     </footer>
@@ -108,9 +108,9 @@
 
 
   
-    <article id="&#39;node-中文API文档" class="article article-type-&#39;node" itemscope itemprop="blogPost">
+    <article id="&#39;node-Node中文API文档" class="article article-type-&#39;node" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/10/29/中文API文档/" class="article-date">
+    <a href="/2015/10/29/Node中文API文档/" class="article-date">
   <time datetime="2015-10-29T02:40:33.000Z" itemprop="datePublished">2015-10-29</time>
 </a>
     
@@ -122,7 +122,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/10/29/中文API文档/">中文API文档&#39;</a>
+      <a class="article-title" href="/2015/10/29/Node中文API文档/">node API 接口</a>
     </h1>
   
 
@@ -130,12 +130,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="V0-12-2">V0.12.2</h2><p>����ѧԺ(<a href="http://wiki.jikexueyuan.com/project/nodejs" target="_blank" rel="external">http://wiki.jikexueyuan.com/project/nodejs</a>)</p>
+        <h2 id="V0-12-2">V0.12.2</h2><p>node API 接口文档(<a href="http://wiki.jikexueyuan.com/project/nodejs" target="_blank" rel="external">http://wiki.jikexueyuan.com/project/nodejs</a>)</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://shengbaodong.github.io/2015/10/29/中文API文档/" data-id="cigbuqnki0003bsqdewe0evob" class="article-share-link">Share</a>
+      <a data-url="http://shengbaodong.github.io/2015/10/29/Node中文API文档/" data-id="cigbvadg80000qwqdvkwflei0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -354,7 +354,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://shengbaodong.github.io/2015/10/27/node-学习资料汇总/" data-id="cigbuqnkl0004bsqdgdx2tmlw" class="article-share-link">Share</a>
+      <a data-url="http://shengbaodong.github.io/2015/10/27/node-学习资料汇总/" data-id="cigbvadhu0002qwqd7tx3a07b" class="article-share-link">Share</a>
       
       
     </footer>
@@ -391,7 +391,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://shengbaodong.github.io/2015/10/27/职场智慧/" data-id="cigbuqnk60001bsqd71nnsly0" class="article-share-link">Share</a>
+      <a data-url="http://shengbaodong.github.io/2015/10/27/职场智慧/" data-id="cigbvadhj0001qwqdb5aateit" class="article-share-link">Share</a>
       
       
     </footer>
@@ -436,7 +436,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://shengbaodong.github.io/2015/10/27/hello-world/" data-id="cigbuqniw0000bsqdtf9ikl3j" class="article-share-link">Share</a>
+      <a data-url="http://shengbaodong.github.io/2015/10/27/hello-world/" data-id="cigbvadhw0003qwqd0slmw6tk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -473,11 +473,11 @@
       <ul>
         
           <li>
-            <a href="/2015/10/29/工具/">工具&#39;</a>
+            <a href="/2015/10/29/WEB压测工具/">压测工具</a>
           </li>
         
           <li>
-            <a href="/2015/10/29/中文API文档/">中文API文档&#39;</a>
+            <a href="/2015/10/29/Node中文API文档/">node API 接口</a>
           </li>
         
           <li>
